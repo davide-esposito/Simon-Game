@@ -1,32 +1,28 @@
 # Simon Game Project
 
-This repository contains the source code for a web-based version of the classic Simon memory game. This game tests players' memory skills by requiring them to replicate a sequence of colors in the correct order.
-
-## How to Play
-
-1. The game starts by randomly illuminating one of the four colors.
-2. The player must remember the order and repeat the colors accordingly.
-3. With each successful attempt, the sequence becomes longer by one additional color.
-4. If the player makes a mistake, the game restarts from the beginning.
+This repository hosts the web-based version of the classic memory game, Simon. Test your memory by following an increasing sequence of flashing colors accompanied by tones. Each level increases in complexity as you successfully mimic the sequence of colors.
 
 ## Features
 
-- Responsive Design: Playable on both desktops and mobile devices.
-- Sound Effects: Each color has a specific sound that plays when activated.
-- Increasing Difficulty: The speed of the sequence presentation increases with each level.
+- **Responsive Design**: The game is fully playable on both desktop and mobile devices, adapting to touch inputs on smartphones and tablets.
+- **Dynamic Difficulty**: The difficulty increases with each level by extending the sequence.
+- **Sound Effects**: Each color is associated with a unique sound that plays when the color is activated.
 
-## Technologies
+## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
-- jQuery
+- **HTML**: Structures the game's layout and content.
+- **CSS**: Provides styling to enhance visual appeal.
+- **JavaScript/jQuery**: Powers the game's logic and interactivity.
 
-## Setup
+## Getting Started
 
-To run the game locally, clone the repository and open the `index.html` file in a web browser of your choice.
+To play the game, you can visit the live version hosted on GitHub Pages:
 
-```bash
-git clone https://github.com/yourusername/yourreponame.git
-cd yourreponame
-open index.html # or use 'start index.html' on Windows
+[Play Simon Game](https://davide-esposito.github.io/Simon-Game/)
+
+Alternatively, you can set up the game locally by following these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/simon-game.git
+   cd simon-game
