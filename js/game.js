@@ -6,12 +6,20 @@ var userClickedPattern = [];
 var started = false;
 var level = 0;
 
-$(document).keypress(function () {
-  if (!started) {
-    $("#level-title").text("Level " + level);
-    nextSequence();
-    started = true;
+$(document).ready(function () {
+  if ("ontouchstart" in document.documentElement) {
+    $("#level-title").text("Touch to start");
+  } else {
+    $("#level-title").text("Press A Key to Start");
   }
+
+  $(document).on("keypress touchstart", function () {
+    if (!started) {
+      $("#level-title").text("Level " + level);
+      nextSequence();
+      started = true;
+    }
+  });
 });
 
 $(".btn").click(function () {
@@ -37,7 +45,7 @@ function checkAnswer(currentLevel) {
     setTimeout(function () {
       $("body").removeClass("game-over");
     }, 200);
-    $("#level-title").text("Game Over, Press Any Key to Restart");
+    $("#level-title").text("Game Over, Touch or Press Any Key to Restart");
     startOver();
   }
 }
